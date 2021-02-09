@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculate</title>
+    <link rel="stylesheet" href="calc.css">
+  </head>
+  <body>
+    <h1 style="text-align: center;">My Calculator</h1>
+
+    <div id='calc'>
+        <input type="text" id="result">
+        <br>
+        <button id="1" onmouseover="setColor(this.id);" onmouseout="removeColor(this.id);" onclick="displayValue(this.id);" value="1">1</button>
+        <button id="2" onmouseover="setColor(this.id);" onmouseout="removeColor(this.id);" onclick="displayValue(this.id);" value="2">2</button>
+        <button id="3" onmouseover="setColor(this.id);" onmouseout="removeColor(this.id);" onclick="displayValue(this.id);" value="3">3</button>
+        <br>
+        <button id="4" onmouseover="setColor(this.id);" onmouseout="removeColor(this.id);" onclick="displayValue(this.id);" value="4">4</button>
+        <button id="5" onmouseover="setColor(this.id);" onmouseout="removeColor(this.id);" onclick="displayValue(this.id);" value="5">5</button>
+        <button id="6" onmouseover="setColor(this.id);" onmouseout="removeColor(this.id);" onclick="displayValue(this.id);" value="6">6</button>
+        <br>
+        <button id="7" onmouseover="setColor(this.id);" onmouseout="removeColor(this.id);" onclick="displayValue(this.id);" value="7">7</button>
+        <button id="8" onmouseover="setColor(this.id);" onmouseout="removeColor(this.id);" onclick="displayValue(this.id);" value="8">8</button>
+        <button id="9" onmouseover="setColor(this.id);" onmouseout="removeColor(this.id);" onclick="displayValue(this.id);" value="9">9</button>
+        <button id="10" onmouseover="setColor(this.id);" onmouseout="removeColor(this.id);" onclick="displayValue(this.id);" value="10">10</button>
+
+        <br>
+        <button id="+" onmouseover="setColor(this.id);" onmouseout="removeColor(this.id);" onclick="setSymbol(this.id);" value="+">+</button>
+        <button id="-" onmouseover="setColor(this.id);" onmouseout="removeColor(this.id);" onclick="setSymbol(this.id);" value="-">-</button>
+        <button id="*" onmouseover="setColor(this.id);" onmouseout="removeColor(this.id);" onclick="setSymbol(this.id);" value="*">*</button>
+        <button id="/" onmouseover="setColor(this.id);" onmouseout="removeColor(this.id);" onclick="setSymbol(this.id);" value="/">/</button>
+        <br>
+        <button id="=" onmouseover="setColor(this.id);" onmouseout="removeColor(this.id);" onclick="calculate();" value="=">=</button>
+    </div>
+
+    <script>
+        'use strict'
+        var firstSelection = 0;
+        var secondSelection = 0;
+        var symbol = '';
+
+        function setColor(id) {
+        var color = "#ffff80";
+        var element = document.getElementById(id);
+        element.style.backgroundColor = color;
+      }
+
+      function removeColor(id) {
+        var color = "";
+        var element = document.getElementById(id);
+        element.style.backgroundColor = color;
+      }
+
+      function displayValue(msgid) {
+        //   alert(msgid)
+        var element = document.getElementById(msgid);
+        document.getElementById("result").value = element.value;
+
+        if(symbol.length==0)
+        {
+            firstSelection = element.value;
+
+        }
+        else{
+            secondSelection = element.value;
+        }
+      }
+
+      function setSymbol(msgid) {
+        //   alert(msgid)
+        var element = document.getElementById(msgid);
+        symbol = element.value;
+      }
+
+      function calculate() {
+        switch (symbol) {
+            case '+':
+            document.getElementById("result").value = firstSelection + secondSelection;
+                break;
+        
+                case '-':
+            document.getElementById("result").value = firstSelection - secondSelection;
+                break;
+
+                case '*':
+            document.getElementById("result").value = firstSelection * secondSelection;
+                break;
+
+                case '/':
+            document.getElementById("result").value = firstSelection / secondSelection;
+                break;
+
+            default:
+            document.getElementById("result").value = 'wrong selection!!!';
+                break;
+        }
+      }
+    </script>
+
+    <!-- <script src="eventhandle.js"></script> -->
+  </body>
+</html>

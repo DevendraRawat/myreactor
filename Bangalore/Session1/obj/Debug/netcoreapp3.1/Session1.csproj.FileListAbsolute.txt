@@ -1,0 +1,13 @@
+C:\Reactor\Bangalore\Session1\bin\Debug\netcoreapp3.1\Session1.exe
+C:\Reactor\Bangalore\Session1\bin\Debug\netcoreapp3.1\Session1.deps.json
+C:\Reactor\Bangalore\Session1\bin\Debug\netcoreapp3.1\Session1.runtimeconfig.json
+C:\Reactor\Bangalore\Session1\bin\Debug\netcoreapp3.1\Session1.runtimeconfig.dev.json
+C:\Reactor\Bangalore\Session1\bin\Debug\netcoreapp3.1\Session1.dll
+C:\Reactor\Bangalore\Session1\bin\Debug\netcoreapp3.1\Session1.pdb
+C:\Reactor\Bangalore\Session1\obj\Debug\netcoreapp3.1\Session1.csprojAssemblyReference.cache
+C:\Reactor\Bangalore\Session1\obj\Debug\netcoreapp3.1\Session1.AssemblyInfoInputs.cache
+C:\Reactor\Bangalore\Session1\obj\Debug\netcoreapp3.1\Session1.AssemblyInfo.cs
+C:\Reactor\Bangalore\Session1\obj\Debug\netcoreapp3.1\Session1.csproj.CoreCompileInputs.cache
+C:\Reactor\Bangalore\Session1\obj\Debug\netcoreapp3.1\Session1.dll
+C:\Reactor\Bangalore\Session1\obj\Debug\netcoreapp3.1\Session1.pdb
+C:\Reactor\Bangalore\Session1\obj\Debug\netcoreapp3.1\Session1.genruntimeconfig.cache

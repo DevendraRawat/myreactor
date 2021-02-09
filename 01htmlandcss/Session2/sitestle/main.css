@@ -1,0 +1,86 @@
+h1{
+    color: blue;
+    text-align: center;
+}
+
+
+
+
+
+h3{
+    background-color:darkgray;
+    padding-left: 10%;
+}
+p{
+    padding-left: 10%;
+}
+#last
+{
+    padding-left: 50%;
+}
+.mytext
+{
+    font-style: italic;
+}
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;    
+}
+body{
+    background-color:darkseagreen;
+}
+.SurveyHeader{
+    color: blueviolet;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    
+  }
+
+  a:visited
+ {
+ color: #4c2c92;
+ }
+a:hover
+ {
+ color: #212121;
+ }
+a:active
+ {
+ color: #1C1C1C;
+ }
+
+ ul
+{
+ list-style-type: none;
+ margin: 0;
+ padding: 0;
+ overflow: hidden;
+ background-color: #8ba6ca;
+}
+li
+{
+ float: left;
+ }
+ li a
+{
+ display: block;
+ color: white;
+ text-align: center;
+ padding: 14px 16px;
+ text-decoration: none;
+}
+table{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%; 
+}
+label{
+    font-style: italic;
+}

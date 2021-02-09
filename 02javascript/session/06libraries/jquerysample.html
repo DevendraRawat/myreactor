@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#hide").click(function () {
+          $("p").hide();
+        });
+        $("#show").click(function () {
+          $("p").show();
+        });
+
+        $("#dance").click(function () {
+          $("#box").animate({ height: "300px" });
+          $("#box").animate({ height: "100px" });
+          $("#box").animate({ height: "200px" });
+          $("#box").animate({ height: "100px" });
+        });
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        $("#myrequest").click(function () {
+          $.get("demo_test.asp", function (data, status) {
+            // if(status.match('success'))
+            // {
+            alert("Data: " + data + "\nStatus: " + status);
+            // }
+            // else
+            // {
+            //     alert('No response!!!');
+            // }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <p>If you click on the "Hide" button, I will disappear.</p>
+    <div>
+      <button id="hide">Hide</button>
+      <button id="show">Show</button>
+      <!-- <button id="dance">dance</button>  -->
+    </div>
+    <!-- <div id="box" style="background:pink;height:100px;width:100px;margin:6px;"></div> -->
+    <hr />
+    <div>
+      <p>Here is an example for using <code>.get():</code></p>
+      <button id='myrequest'> Send an HTTP GET request to a page and get the result back</button>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="MyForm.css">
+    <title>Form</title>
+  </head>
+  <body>
+    <nav>
+      <a href="/html/">HTML</a> | <a href="/css/">CSS</a> |
+      <a href="/js/">JavaScript</a> |
+      <a href="/jquery/">jQuery</a>
+    </nav>
+    <form action="result.html" method="GET" class="form">
+      <label for="first_name">First Name:</label>
+      <input type="text" id="first_name" name="first_name" /> <br />
+      <label for="last_name">Last Name:</label>
+      <input type="text" id="last_name" name="last_name" /><br />
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" /><br />
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="email" /><br />
+
+      <label for="male">Male</label>
+      <input type="radio" id="male" name="gender" value="male" /><br />
+      <label for="female">Female</label>
+      <input type="radio" id="female" name="gender" value="female" /><br />
+      <label for="decline">Prefer not to say</label>
+      <input
+        type="radio"
+        id="non-binary"
+        name="gender"
+        value="non-binary"
+      /><br />
+      <label for="decline">Prefer not to say</label>
+      <input type="radio" id="decline" name="gender" value="decline" /><br />
+      <label for="home_state">Please select your home state</label>
+      <select name="home_state" id="home_state">
+        <option value="AL">Alabama</option>
+        <option value="AK">Alaska</option>
+        <option value="AZ">Arizona</option>
+        <option value="AR">Arkansas</option>
+        <option value="CA">California</option>
+        <option value="CO">Colorado</option>
+        <option value="CT">Connecticut</option>
+      </select>
+      <br />
+      <label for="blue">Blue</label>
+      <input type="checkbox" id="blue" name="color" value="blue" />
+      <label for="green">Green</label>
+      <input type="checkbox" id="green" name="color" value="green" />
+      <label for="red">Red</label>
+      <input type="checkbox" id="red" name="color" value="red" />
+      <label for="black">Black</label>
+      <input type="checkbox" id="black" name="color" value="black" />
+      <label for="purple">Purple</label>
+      <input type="checkbox" id="purple" name="color" value="purple" />
+      <br />
+      <input type="submit" value="Submit" />
+      <!-- <button type="submit">Submit</button> -->
+    </form>
+  </body>
+</html>
